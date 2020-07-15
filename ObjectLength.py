@@ -4,7 +4,7 @@ from scipy.spatial.distance import euclidean
 from imutils import perspective
 from imutils import contours
 import imutils
-import utlis
+import utils
 
 
 #Insert the image path name
@@ -44,11 +44,11 @@ pixel_per_cm = pixel_dist/dist_in_cm
 
 
 # Draw all contours that were counted
-utlis.drawCoutour (count, pixel_per_cm, image)
+utils.drawCoutour (count, pixel_per_cm, image)
 #Check utlis for definition
-utlis.show_images([image])
+utils.show_images([image])
 
-#Can extend for video capture for an extension
+#Can extend for video capture eventually
 cap = cv2.VideoCapture(0)
 
 while True:
